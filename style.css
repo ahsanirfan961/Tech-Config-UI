@@ -1,0 +1,156 @@
+@font-face {
+  font-family: Bangers;
+  src: url("Bangers.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  color: #cdedfe;
+  background-color: #00103b;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  z-index: 1;
+}
+
+#ham {
+  width: 3.5%;
+  height: 75%;
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1%;
+}
+
+#profile {
+  width: 3.5%;
+  height: 58%;
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5%;
+}
+
+nav {
+  width: 100%;
+  height: 10%;
+  color: #cdedfe;
+  background-color: #00103b;
+  font-family: Bangers, verdana;
+  font-size: 24px;
+  position: relative;
+}
+
+.options {
+  width: 16.6%;
+  height: 100%;
+  color: #cdedfe;
+  text-decoration: none;
+  /* border: #cdedfe solid 1px; */
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-image 0.3s, color 0.3s;
+}
+
+.options:hover {
+  background-color: #cdedfe;
+  color: #010913;
+}
+
+.main {
+  background-color: #cdedfe;
+}
+
+.card {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  box-shadow: 0px 0px 30px #cdedfe;
+  border-radius: 80px;
+  background-image: radial-gradient(#01114e, #010913);
+}
+
+.heading1 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-family: Bangers, verdana;
+  font-size: 80px;
+  color: #cdedfe;
+  line-height: 100px;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  background-color: #cdedfe;
+  position: absolute;
+  top: 0;
+  font-size: 24px;
+  font-family: Bangers, verdana;
+  border-radius: 10px;
+  color: #010913;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px #cdedfe;
+  transition: background-image 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-image: radial-gradient(#01114e, #010913);
+  color: #cdedfe;
+}
+
+#bgImage1 {
+  width: 110%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  animation-name: image1;
+  animation-duration: 30s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes image1 {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: -10%;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.gradient1 {
+  width: 100%;
+  height: auto;
+  background-image: radial-gradient(#00103b, #010913);
+  position: relative;
+}
+
+footer {
+  background-color: #00103b;
+  color: rgb(144, 172, 187);
+  font-family: Verdana;
+  font-size: 14px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
